@@ -16,6 +16,11 @@ struct MainClipboardWindow: View {
         .frame(width: targetWindowSize.width, height: targetWindowSize.height, alignment: .topLeading)
         .glassPanel(cornerRadius: 22, material: .regularMaterial)
         .overlay(alignment: .topLeading) {
+            WindowDragArea()
+                .frame(width: 462, height: 36)
+                .padding(.leading, 44)
+        }
+        .overlay(alignment: .topLeading) {
             WindowCloseButton()
                 .padding(.top, 16)
                 .padding(.leading, 18)

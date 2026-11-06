@@ -17,6 +17,29 @@ The interface uses SwiftUI and AppKit. SQLite history is managed by an isolated 
 - Menu bar access, recent clips, configurable global shortcuts, and launch at login.
 - Local retention limits and confirmation before clearing pinned items.
 
+## Screenshots
+
+Captured from the native macOS app with built-in mock clipboard items.
+
+### List And Board
+
+<p align="center">
+  <img src="docs/screenshots/history-list.png" alt="PasteX clipboard history in list view" width="46%">
+  <img src="docs/screenshots/history-board.png" alt="PasteX clipboard history in board view" width="46%">
+</p>
+
+### Code Preview
+
+![PasteX inline TypeScript preview with syntax highlighting](docs/screenshots/preview-code.png)
+
+### Color Preview
+
+![PasteX color preview with HEX, RGB, and RGBA copy actions](docs/screenshots/preview-color.png)
+
+### JSON Preview
+
+![PasteX inline JSON preview with formatting and syntax highlighting](docs/screenshots/preview-json.png)
+
 ## Requirements
 
 - macOS 15 or later.
