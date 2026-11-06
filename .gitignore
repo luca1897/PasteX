@@ -1,0 +1,49 @@
+# macOS
+.DS_Store
+
+# Xcode user state
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+*.moved-aside
+
+# Build products
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Local environment
+.env
+.env.*
+
+# Editors
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Clipboard history and local credentials
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.p12
+*.mobileprovision
+*.provisionprofile
+
+# Generated analysis and release artifacts
+graphify-out/
+dist/
+*.xcarchive

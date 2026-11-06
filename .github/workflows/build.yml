@@ -1,0 +1,24 @@
+name: macOS Build
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Release
+        run: xcodebuild -project PasteX.xcodeproj -scheme PasteX -configuration Release CODE_SIGNING_ALLOWED=NO build
+      - name: SQLite regression
+        run: |
+          swiftc -parse-as-library \
+            PasteX/Models/ClipboardItemType.swift PasteX/Models/ClipboardItem.swift \
+            PasteX/Models/ClipboardCapture.swift PasteX/Services/ContentHasher.swift \
+            PasteX/Persistence/ClipboardDatabase.swift Tests/DatabaseRegression.swift \
+            -o "$RUNNER_TEMP/pastex-db-regression" -lsqlite3
+          "$RUNNER_TEMP/pastex-db-regression"

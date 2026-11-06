@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1000010000000000000001 /* PasteXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000001 /* PasteXApp.swift */; };
+		4D1000010000000000000002 /* ClipboardItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000002 /* ClipboardItemType.swift */; };
+		4D4000010000000000000001 /* ClipboardDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001010000000000000001 /* ClipboardDisplayMode.swift */; };
+		4D1000010000000000000003 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000003 /* ClipboardItem.swift */; };
+		4D1000010000000000000004 /* MockClipboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000004 /* MockClipboardData.swift */; };
+		4D1000010000000000000005 /* ClipboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000005 /* ClipboardViewModel.swift */; };
+		4D1000010000000000000006 /* PreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000006 /* PreferencesViewModel.swift */; };
+		4D1000010000000000000007 /* GlassPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000007 /* GlassPanel.swift */; };
+		4D1000010000000000000008 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000008 /* SearchField.swift */; };
+		4D1000010000000000000009 /* IconBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000009 /* IconBadge.swift */; };
+		4D100001000000000000000A /* KeyboardShortcutBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100101000000000000000A /* KeyboardShortcutBadge.swift */; };
+		4D100001000000000000000B /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100101000000000000000B /* SectionHeader.swift */; };
+		4D100001000000000000000C /* WindowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100101000000000000000C /* WindowConfigurator.swift */; };
+		4D100001000000000000000D /* AppIconMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100101000000000000000D /* AppIconMark.swift */; };
+		4D1000010000000000000017 /* WindowCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000017 /* WindowCloseButton.swift */; };
+		4D100001000000000000000E /* MainClipboardWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100101000000000000000E /* MainClipboardWindow.swift */; };
+		4D100001000000000000000F /* ClipboardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D100101000000000000000F /* ClipboardListView.swift */; };
+		4D4000010000000000000002 /* ClipboardBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001010000000000000002 /* ClipboardBoardView.swift */; };
+		4D1000010000000000000010 /* ClipboardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000010 /* ClipboardRowView.swift */; };
+		4D1000010000000000000011 /* ClipboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000011 /* ClipboardDetailView.swift */; };
+		4D1000010000000000000012 /* CompactSearchOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000012 /* CompactSearchOverlay.swift */; };
+		4D1000010000000000000013 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000013 /* PreferencesWindow.swift */; };
+		4D1000010000000000000014 /* PreferencesSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000014 /* PreferencesSidebar.swift */; };
+		4D1000010000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1001010000000000000015 /* Assets.xcassets */; };
+		4D2000010000000000000001 /* ClipboardCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2001010000000000000001 /* ClipboardCapture.swift */; };
+		4D2000010000000000000002 /* ClipboardDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2001010000000000000002 /* ClipboardDatabase.swift */; };
+		4D2000010000000000000003 /* ContentHasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2001010000000000000003 /* ContentHasher.swift */; };
+		4D2000010000000000000004 /* PasteboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2001010000000000000004 /* PasteboardMonitor.swift */; };
+		4D2000010000000000000005 /* SmartClipboardDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2001010000000000000005 /* SmartClipboardDetector.swift */; };
+		4D2000010000000000000006 /* GlobalHotKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2001010000000000000006 /* GlobalHotKeyManager.swift */; };
+		4D3000010000000000000001 /* PasteXWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3001010000000000000001 /* PasteXWindowManager.swift */; };
+			4D5000010000000000000009 /* LaunchAtLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5001010000000000000009 /* LaunchAtLoginManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D1001010000000000000001 /* PasteXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteXApp.swift; sourceTree = "<group>"; };
+		4D1001010000000000000002 /* ClipboardItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItemType.swift; sourceTree = "<group>"; };
+		4D4001010000000000000001 /* ClipboardDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardDisplayMode.swift; sourceTree = "<group>"; };
+		4D1001010000000000000003 /* ClipboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		4D1001010000000000000004 /* MockClipboardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClipboardData.swift; sourceTree = "<group>"; };
+		4D1001010000000000000005 /* ClipboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardViewModel.swift; sourceTree = "<group>"; };
+		4D1001010000000000000006 /* PreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewModel.swift; sourceTree = "<group>"; };
+		4D1001010000000000000007 /* GlassPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassPanel.swift; sourceTree = "<group>"; };
+		4D1001010000000000000008 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		4D1001010000000000000009 /* IconBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBadge.swift; sourceTree = "<group>"; };
+		4D100101000000000000000A /* KeyboardShortcutBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutBadge.swift; sourceTree = "<group>"; };
+		4D100101000000000000000B /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		4D100101000000000000000C /* WindowConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowConfigurator.swift; sourceTree = "<group>"; };
+		4D100101000000000000000D /* AppIconMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconMark.swift; sourceTree = "<group>"; };
+		4D1001010000000000000017 /* WindowCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCloseButton.swift; sourceTree = "<group>"; };
+		4D100101000000000000000E /* MainClipboardWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClipboardWindow.swift; sourceTree = "<group>"; };
+		4D100101000000000000000F /* ClipboardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardListView.swift; sourceTree = "<group>"; };
+		4D4001010000000000000002 /* ClipboardBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardBoardView.swift; sourceTree = "<group>"; };
+		4D1001010000000000000010 /* ClipboardRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardRowView.swift; sourceTree = "<group>"; };
+		4D1001010000000000000011 /* ClipboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardDetailView.swift; sourceTree = "<group>"; };
+		4D1001010000000000000012 /* CompactSearchOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactSearchOverlay.swift; sourceTree = "<group>"; };
+		4D1001010000000000000013 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		4D1001010000000000000014 /* PreferencesSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSidebar.swift; sourceTree = "<group>"; };
+		4D1001010000000000000015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D1001010000000000000016 /* PasteX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasteX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2001010000000000000001 /* ClipboardCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCapture.swift; sourceTree = "<group>"; };
+		4D2001010000000000000002 /* ClipboardDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardDatabase.swift; sourceTree = "<group>"; };
+		4D2001010000000000000003 /* ContentHasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHasher.swift; sourceTree = "<group>"; };
+		4D2001010000000000000004 /* PasteboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitor.swift; sourceTree = "<group>"; };
+		4D2001010000000000000005 /* SmartClipboardDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartClipboardDetector.swift; sourceTree = "<group>"; };
+		4D2001010000000000000006 /* GlobalHotKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotKeyManager.swift; sourceTree = "<group>"; };
+		4D3001010000000000000001 /* PasteXWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteXWindowManager.swift; sourceTree = "<group>"; };
+			4D5001010000000000000009 /* LaunchAtLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D1002010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D1003010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				4D1003010000000000000002 /* PasteX */,
+				4D1003010000000000000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000002 /* PasteX */ = {
+			isa = PBXGroup;
+			children = (
+				4D1001010000000000000001 /* PasteXApp.swift */,
+				4D1003010000000000000003 /* Models */,
+				4D1003010000000000000004 /* ViewModels */,
+				4D1003010000000000000005 /* Views */,
+				4D1003010000000000000006 /* Components */,
+				4D1003010000000000000007 /* Data */,
+				4D2003010000000000000001 /* Persistence */,
+				4D2003010000000000000002 /* Services */,
+				4D1001010000000000000015 /* Assets.xcassets */,
+			);
+			path = PasteX;
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D1001010000000000000002 /* ClipboardItemType.swift */,
+				4D4001010000000000000001 /* ClipboardDisplayMode.swift */,
+				4D1001010000000000000003 /* ClipboardItem.swift */,
+				4D2001010000000000000001 /* ClipboardCapture.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D1001010000000000000005 /* ClipboardViewModel.swift */,
+				4D1001010000000000000006 /* PreferencesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D100101000000000000000E /* MainClipboardWindow.swift */,
+				4D100101000000000000000F /* ClipboardListView.swift */,
+				4D4001010000000000000002 /* ClipboardBoardView.swift */,
+				4D1001010000000000000010 /* ClipboardRowView.swift */,
+				4D1001010000000000000011 /* ClipboardDetailView.swift */,
+				4D1001010000000000000012 /* CompactSearchOverlay.swift */,
+				4D1001010000000000000013 /* PreferencesWindow.swift */,
+				4D1001010000000000000014 /* PreferencesSidebar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4D1001010000000000000007 /* GlassPanel.swift */,
+				4D1001010000000000000008 /* SearchField.swift */,
+				4D1001010000000000000009 /* IconBadge.swift */,
+				4D100101000000000000000A /* KeyboardShortcutBadge.swift */,
+				4D100101000000000000000B /* SectionHeader.swift */,
+				4D100101000000000000000C /* WindowConfigurator.swift */,
+				4D100101000000000000000D /* AppIconMark.swift */,
+				4D1001010000000000000017 /* WindowCloseButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000007 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D1001010000000000000004 /* MockClipboardData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4D2003010000000000000001 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				4D2001010000000000000002 /* ClipboardDatabase.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		4D2003010000000000000002 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D2001010000000000000003 /* ContentHasher.swift */,
+				4D2001010000000000000004 /* PasteboardMonitor.swift */,
+				4D2001010000000000000005 /* SmartClipboardDetector.swift */,
+				4D2001010000000000000006 /* GlobalHotKeyManager.swift */,
+				4D3001010000000000000001 /* PasteXWindowManager.swift */,
+				4D5001010000000000000009 /* LaunchAtLoginManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4D1003010000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D1001010000000000000016 /* PasteX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D1004010000000000000001 /* PasteX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D1009010000000000000001 /* Build configuration list for PBXNativeTarget "PasteX" */;
+			buildPhases = (
+				4D1006010000000000000001 /* Sources */,
+				4D1002010000000000000001 /* Frameworks */,
+				4D1007010000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasteX;
+			productName = PasteX;
+			productReference = 4D1001010000000000000016 /* PasteX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D1005010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					4D1004010000000000000001 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 4D1009010000000000000002 /* Build configuration list for PBXProject "PasteX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D1003010000000000000001;
+			productRefGroup = 4D1003010000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D1004010000000000000001 /* PasteX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D1007010000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1000010000000000000015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D1006010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1000010000000000000001 /* PasteXApp.swift in Sources */,
+				4D1000010000000000000002 /* ClipboardItemType.swift in Sources */,
+				4D4000010000000000000001 /* ClipboardDisplayMode.swift in Sources */,
+				4D1000010000000000000003 /* ClipboardItem.swift in Sources */,
+				4D2000010000000000000001 /* ClipboardCapture.swift in Sources */,
+				4D1000010000000000000004 /* MockClipboardData.swift in Sources */,
+				4D1000010000000000000005 /* ClipboardViewModel.swift in Sources */,
+				4D1000010000000000000006 /* PreferencesViewModel.swift in Sources */,
+				4D2000010000000000000002 /* ClipboardDatabase.swift in Sources */,
+				4D1000010000000000000007 /* GlassPanel.swift in Sources */,
+				4D1000010000000000000008 /* SearchField.swift in Sources */,
+				4D1000010000000000000009 /* IconBadge.swift in Sources */,
+				4D2000010000000000000003 /* ContentHasher.swift in Sources */,
+				4D2000010000000000000004 /* PasteboardMonitor.swift in Sources */,
+				4D2000010000000000000005 /* SmartClipboardDetector.swift in Sources */,
+				4D2000010000000000000006 /* GlobalHotKeyManager.swift in Sources */,
+				4D3000010000000000000001 /* PasteXWindowManager.swift in Sources */,
+				4D5000010000000000000009 /* LaunchAtLoginManager.swift in Sources */,
+				4D100001000000000000000A /* KeyboardShortcutBadge.swift in Sources */,
+				4D100001000000000000000B /* SectionHeader.swift in Sources */,
+				4D100001000000000000000C /* WindowConfigurator.swift in Sources */,
+				4D100001000000000000000D /* AppIconMark.swift in Sources */,
+				4D1000010000000000000017 /* WindowCloseButton.swift in Sources */,
+				4D100001000000000000000E /* MainClipboardWindow.swift in Sources */,
+				4D100001000000000000000F /* ClipboardListView.swift in Sources */,
+				4D4000010000000000000002 /* ClipboardBoardView.swift in Sources */,
+				4D1000010000000000000010 /* ClipboardRowView.swift in Sources */,
+				4D1000010000000000000011 /* ClipboardDetailView.swift in Sources */,
+				4D1000010000000000000012 /* CompactSearchOverlay.swift in Sources */,
+				4D1000010000000000000013 /* PreferencesWindow.swift in Sources */,
+				4D1000010000000000000014 /* PreferencesSidebar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D1008010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D1008010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D1008010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+					GENERATE_INFOPLIST_FILE = YES;
+					INFOPLIST_KEY_CFBundleDisplayName = PasteX;
+					INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+					INFOPLIST_KEY_LSUIElement = YES;
+					INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lsqlite3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca1897.PasteX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D1008010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+					GENERATE_INFOPLIST_FILE = YES;
+					INFOPLIST_KEY_CFBundleDisplayName = PasteX;
+					INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+					INFOPLIST_KEY_LSUIElement = YES;
+					INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lsqlite3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luca1897.PasteX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D1009010000000000000001 /* Build configuration list for PBXNativeTarget "PasteX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1008010000000000000003 /* Debug */,
+				4D1008010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1009010000000000000002 /* Build configuration list for PBXProject "PasteX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1008010000000000000001 /* Debug */,
+				4D1008010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D1005010000000000000001 /* Project object */;
+}
